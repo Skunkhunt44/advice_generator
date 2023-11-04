@@ -1,0 +1,109 @@
+:root{
+  --lightCyan:hsl(193, 38%, 86%);
+  --NeonGreen:hsl(150, 100%, 66%);
+
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+
+  --fs-quote: 28px;
+  --fw-normal:800;
+
+  --ff-800:'Manrope', sans-serif;
+}
+
+
+.text-md{font-size:var(--fs-quote);}
+.font-md{font-weight: var(--fw-normal);}
+
+.text-cyan{color:var(--lightCyan);}
+.text-neon{color: var(--NeonGreen);}
+.text-gb{color:var(--GrayishBlue);}
+.text-dgb{color: var(--DarkGrayishBlue);}
+.text-db{color: var(--DarkBlue);}
+
+.bg-cyan{background-color:var(--lightCyan);}
+.bg-neon{background-color: var(--NeonGreen);}
+.bg-gb{background-color:var(--GrayishBlue);}
+.bg-dgb{background-color: var(--DarkGrayishBlue);}
+.bg-db{background-color: var(--DarkBlue);}
+
+.ff-md{font-family: var(--ff-800);}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html{
+  font-family: var(--ff-800);
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.content{
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  height: 270px;
+  padding: 35px;
+   text-align: center;
+  
+  position: relative;
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items:center;
+justify-content: space-between; 
+
+}
+.quote::before,.quote::after{
+  content: '"'; 
+  width: 10px;
+  height: 10px;
+
+}
+.dice{
+  width: 11%;
+  height: 16%; /* Set height to the same percentage as width to make it a square */
+  border-radius: 50%;
+ display: flex;
+ align-items: center; 
+ transition: background-color 0.3s;
+ 
+  position: absolute;
+ bottom: -20px;
+  
+  justify-content: center;
+ 
+ 
+
+}
+.dice:hover{
+  background-color: #00FFCC; 
+}
+
+
+.divider{
+  z-index: 1000;
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+  /* Your mobile styles here */
+}
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
